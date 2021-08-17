@@ -2,6 +2,14 @@
   box-sizing: border-box;
 }
 
+:root {
+  --main-red-color: #e06262;
+}
+
+.main-red-color {
+  color: var(--main-red-color);
+}
+
 html {
   font-size: 10px;
 }
@@ -11,7 +19,7 @@ body {
   justify-content: center;
   align-content: center;
   align-items: center;
-  background-color: #2d2d2d;
+  background-color: rgb(189, 229, 255);
   height: 100vh;
 }
 
@@ -25,7 +33,7 @@ html {
 .container {
   width: 600px;
   height: 600px;
-  background-color: white;
+  background-color: rgb(189, 229, 255);
   border-radius: 4px;
   padding: 34px;
 }
@@ -33,4 +41,31 @@ html {
 .frame {
   border: 1px solid #484848;
   height: 100%;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  align-items: flex-start;
+}
+
+.header-tittle {
+  flex: 1;
+  text-align: center;
+  font-size: 36px;
+}
+
+.header-btn {
+  font-size: 1.8rem;
+  font-family: "roboto", sans-serif;
+  font-weight: bold;
+
+  padding: 24px;
+  cursor: pointer;
+
+  background: unset;
+  border: unset;
+  outline: unset;
 }
