@@ -20,7 +20,6 @@ body {
   align-content: center;
   align-items: center;
   background-color: rgb(189, 229, 255);
-  height: 100vh;
 }
 
 body,
@@ -32,10 +31,11 @@ html {
 
 .container {
   width: 600px;
-  height: 600px;
+  height: 800px;
   background-color: rgb(189, 229, 255);
   border-radius: 4px;
-  padding: 34px;
+
+  padding: 32px;
 }
 
 .frame {
@@ -62,7 +62,43 @@ html {
   font-family: "roboto", sans-serif;
   font-weight: bold;
 
-  padding: 24px;
+  padding: 16px;
+  cursor: pointer;
+
+  background: unset;
+  border: unset;
+  outline: unset;
+}
+
+.add {
+  padding: 16px;
+}
+
+.add-form {
+  display: flex;
+  align-items: flex-start;
+}
+
+.add-input {
+  background: unset;
+  border: unset;
+  padding: 8px 64px;
+
+  flex: 1;
+
+  border-bottom: 1px solid var(--main-red-color);
+  outline: unset;
+
+  font-family: "roboto";
+  font-size: 16px;
+}
+
+.add-btn {
+  font-size: 1.8rem;
+  font-family: "roboto";
+
+  padding: 16px;
+  padding-right: unset;
   cursor: pointer;
 
   background: unset;
